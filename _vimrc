@@ -3,7 +3,7 @@ set nocompatible
 scriptencoding utf-8
 set regexpengine=1
 
-source $HOME/.vim/vimfiles/plugged_cfg.vim
+source $HOME/.vim/plugged_cfg.vim
 
 "--- General Settings ---
 let mapleader = ","
@@ -120,35 +120,6 @@ set showmatch
 set hlsearch
 
 "--- Filetype settings
-augroup Java
-  au!
-  au Bufread,BufNewFile *Ent*test/*Test.java let g:syntastic_java_checkstyle_conf_file="$HOME\\checkstyle\rso_test_checks.xml"
-  au Bufread,BufNewFile *Ent*test/*IT.java let g:syntastic_java_checkstyle_conf_file="$HOME\\checkstyle\\rso_test_checks.xml"
-  au Bufread,BufNewFile *Ent*src/main/*.java let g:syntastic_java_checkstyle_conf_file="c:\\dev\\home\\checkstyle\\rso_checks.xml"
-augroup END
-
-augroup Javascript
-  au!
-  au FileType javascript
-        \ nnoremap <silent> <leader>f :call JsBeautify()<CR>
-augroup END
-
-augroup Markdown
-  au!
-  au BufNewFile,BufRead *.pandoc,*.pd,*.pdc set filetype=pandoc
-  au BufNewFile,BufRead *.markdown,*.md set filetype=markdown
-augroup END
-
-augroup xml
-  au!
-  au FileType xml
-      \ nnoremap <buffer> <silent> <leader>f :% !c:\dev\opt\xsltproc-1.1.26\xmllint.exe % --format<CR>:echo "Reformatted."<CR>
-augroup END
-
-augroup html
-  au!
-  au FileType html
-      \ nnoremap <buffer> <silent> <leader>f :% !c:\dev\opt\tidy-5.1.14-64\bin\tidy.exe -q -i --show-errors 0<CR>
 
 "--- Plugin settings ---
 "-- solarized
@@ -192,19 +163,18 @@ let g:syntastic_enable_ballons = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_error_symbol = 'E'
 let g:syntastic_warning_symbol = "W"
-let g:syntastic_xml_xmllint_exec = "c:\\dev\\opt\\xsltproc-1.1.26\\xmllint.exe"
-let g:syntastic_xml_checkers = ['xmllint']
+" let g:syntastic_xml_xmllint_exec = "c:\\dev\\opt\\xsltproc-1.1.26\\xmllint.exe"
+" let g:syntastic_xml_checkers = ['xmllint']
 
-let g:syntastic_html_tidy_exec = "c:\\dev\\opt\\tidy-5.1.14-64\\bin\\tidy.exe"
-let g:syntastic_html_checkrs = [ 'tidy' ]
+" let g:syntastic_html_tidy_exec = "c:\\dev\\opt\\tidy-5.1.14-64\\bin\\tidy.exe"
+" let g:syntastic_html_checkrs = [ 'tidy' ]
 
-let g:syntastic_javascript_jshint_exec = "c:\\dev\\opt\\nodejs-5.0.0-64\\jshint.cmd"
-let g:syntastic_javascript_checkers = ['jshint']
+" let g:syntastic_javascript_jshint_exec = "c:\\dev\\opt\\nodejs-5.0.0-64\\jshint.cmd"
+" let g:syntastic_javascript_checkers = ['jshint']
 
-
-let g:syntastic_java_checkers = ['checkstyle']
-let g:syntastic_java_maven_executable = "c:\\dev\\bin\\mvn.cmd"
-let g:syntastic_java_checkstyle_classpath="c:\\dev\\opt\\checkstyle-6.11.2\\checkstyle-6.11.2-all.jar"
+" let g:syntastic_java_checkers = ['checkstyle']
+" let g:syntastic_java_maven_executable = "c:\\dev\\bin\\mvn.cmd"
+" let g:syntastic_java_checkstyle_classpath="c:\\dev\\opt\\checkstyle-6.11.2\\checkstyle-6.11.2-all.jar"
 
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 let g:syntastic_mode_map = { 'mode': 'active',
@@ -221,5 +191,5 @@ let g:rooter_patterns = ['pom.xml', '.git/']
 nmap <silent> <leader>o :TagbarToggle<CR>
 
 "--- vim-maven-pugin
-nmap <silent> <leader>mt :Mvn -q test -Dtest=%:t:r -DfailIfNoTests=true<CR>
-nmap <silent> <leader>mc :Mvn -q compile<CR>
+" nmap <silent> <leader>mt :Mvn -q test -Dtest=%:t:r -DfailIfNoTests=true<CR>
+" nmap <silent> <leader>mc :Mvn -q compile<CR>
