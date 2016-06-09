@@ -1,4 +1,4 @@
-" Gotta be the first setting
+z" Gotta be the first setting
 set nocompatible
 scriptencoding utf-8
 set regexpengine=1
@@ -193,3 +193,12 @@ nmap <silent> <leader>o :TagbarToggle<CR>
 "--- vim-maven-pugin
 " nmap <silent> <leader>mt :Mvn -q test -Dtest=%:t:r -DfailIfNoTests=true<CR>
 " nmap <silent> <leader>mc :Mvn -q compile<CR>
+
+"--- UtliSnips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<leader>x"
+let g:UltiSnipsJumpBackwardTrigger="<leader>z"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"

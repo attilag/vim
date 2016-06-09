@@ -43,3 +43,6 @@
 [submodule "plugged/vim-easy-align"]
 	path = plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "plugged/vim-snippets"]
+	path = plugged/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
