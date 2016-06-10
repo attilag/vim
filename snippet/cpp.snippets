@@ -1,0 +1,37 @@
+priority -50
+
+extends cpp
+
+# We want to overwrite everything in parent ft.
+priority -48
+
+snippet once "header guard improved with windows pragma" b
+#ifndef __${1:`!v toupper(vim_snippets#Filename('$1_HPP','GUARD_HPP'))`}__
+#define __$1__
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1200)
+# pragma once
+#endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
+
+${0:// content}
+
+#endif // __$1__
+endsnippet
+
+snippet todo "todo" b
+// TODO(${2:`!p import getpass
+snip.rv = getpass.getuser()`}): ${1:desc} #`!v strftime("%y/%m/%d-%H:%M")`
+endsnippet
+
+snippet todo "todol" b
+/**
+ * TODO(${2:`!p import getpass
+snip.rv = getpass.getuser()`}): ${1:desc} 
+ * #`!v strftime("%y/%m/%d-%H:%M")`
+ */
+endsnippet
+
+snippet lic "license" b
+// (C)opyright  ${1:MMXVI} ${2:Attila Glück} <${3:attilag at protonmail dot ch}>
+// See LICENSE file for license details.
+endsnippet

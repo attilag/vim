@@ -1,4 +1,4 @@
-z" Gotta be the first setting
+" Gotta be the first setting
 set nocompatible
 scriptencoding utf-8
 set regexpengine=1
@@ -197,8 +197,10 @@ nmap <silent> <leader>o :TagbarToggle<CR>
 "--- UtliSnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<leader>x"
-let g:UltiSnipsJumpBackwardTrigger="<leader>z"
+let g:UltiSnipsListSnippets="<leader><tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-x>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippet"]
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
