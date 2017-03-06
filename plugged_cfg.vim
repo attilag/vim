@@ -14,7 +14,7 @@ Plug 'tpope/vim-fugitive' " git support
 Plug 'junegunn/vim-easy-align'
 Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-rooter'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 "-- developer tools
 Plug 'scrooloose/nerdcommenter' " commenter 
