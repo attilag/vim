@@ -4,6 +4,7 @@ call plug#begin('$HOME/.vim/plugged')
 Plug 'tpope/vim-sensible'
 "-- colors/themes
 Plug 'altercation/vim-colors-solarized'
+Plug 'elmindreda/vimcolors'
 Plug 'bling/vim-airline'
 "-- general tools
 Plug 'scrooloose/nerdtree'
@@ -24,7 +25,6 @@ Plug 'pangloss/vim-javascript' " better syntax highlihght
 Plug 'marijnh/tern_for_vim' " javasrcipt tag
 Plug 'burnettk/vim-angular' " AngularJS
 Plug 'maksimr/vim-jsbeautify' " reformat
-Plug 'einars/js-beautify' " js-beauty app
 " Java
 Plug 'mikelue/vim-maven-plugin'
 " C++

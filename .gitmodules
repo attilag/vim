@@ -46,3 +46,9 @@
 [submodule "plugged/vim-snippets"]
 	path = plugged/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "plugged/stlrefvim"]
+	path = plugged/stlrefvim
+	url = https://github.com/vim-scripts/stlrefvim.git
+[submodule "plugged/vimcolors"]
+	path = plugged/vimcolors
+	url = https://github.com/elmindreda/vimcolors

@@ -5,6 +5,19 @@ set regexpengine=1
 
 source $HOME/.vim/plugged_cfg.vim
 
+"--- Detect OS ---
+if !exists("g:os")
+  if !empty($OS)
+    let g:os=$OS
+  else
+    if has("win32") || has("win32unix") || has("win64") || has("win16")
+      let g:os= "Windows"
+    else
+      let g:os = substitute(system('uname'), '\n', '', '')
+    endif
+  endif
+endif
+
 "--- General Settings ---
 let mapleader = ","
 let maplocalleader = ","
@@ -40,7 +53,6 @@ endif
 set wildignore+=*.o,*.obj,*.class,*.pyc,*.so,*.swp,*.zip,*.jpg,*.gif,*.png,*.pdf
 set wildignore+=.git,.hg,.svn,DS_STORE,bower_components,node_modules,target
 
-set t_Co=256 " check
 set cc=81 " check
 
 filetype plugin indent on
@@ -84,6 +96,7 @@ nmap <silent> <leader>bs :CtrlPMRU<cr>
 nmap <silent> <leader>sn :lnext<cr>
 
 " Look and Feel
+set background=dark
 colorscheme solarized
 " removes modelines (best practices, they're apparently a security exploit)
 set modelines=0
@@ -91,11 +104,16 @@ if has('gui_running')
   set guifont=Consolas:h11
   set guifontwide="Courier New":h10 " Windows mixed chracter sets
   set go=-T " no taskbar
-endif
-if !has('gui_running')
+else
   set term=xterm
+  set t_Co=256 " check
   let &t_AB="\e[48;5;%dm"
   let &t_AF="\e[38;5;%dm"
+  if g:os == "Windows"
+    colorscheme phosphor
+    set term=xterm-256color
+    set t_ut=
+  endif
 endif
 
 highlight NonText guifg=#4a4a59 " check
@@ -123,9 +141,9 @@ set hlsearch
 
 "--- Plugin settings ---
 "-- solarized
-set background=dark
-if has('win32')
+if g:os == "Windows"
   let g:solarized_underline=0
+  let g:solarized_termcolors=256
 endif
 let g:solarized_termtrans=1
 "-- airline
