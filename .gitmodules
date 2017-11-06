@@ -48,7 +48,33 @@
 	url = https://github.com/honza/vim-snippets.git
 [submodule "plugged/stlrefvim"]
 	path = plugged/stlrefvim
-	url = https://github.com/vim-scripts/stlrefvim.git
+  url = https://github.com/vim-scripts/stlrefvim.git
+  ignore = untracked
 [submodule "plugged/vimcolors"]
 	path = plugged/vimcolors
 	url = https://github.com/elmindreda/vimcolors
+[submodule "plugged/tern_for_vim"]
+	path = plugged/tern_for_vim
+  url = https://github.com/ternjs/tern_for_vim
+[submodule "plugged/vim-angular"]
+	path = plugged/vim-angular
+  url = https://github.com/burnettk/vim-angular
+  ignore = untracked
+[submodule "plugged/vim-clang-format"]
+	path = plugged/vim-clang-format
+  url = https://github.com/rhysd/vim-clang-format
+  ignore = untracked
+[submodule "plugged/vim-javascript"]
+  path = plugged/vim-javascript
+  url = https://github.com/pangloss/vim-javascript
+[submodule "plugged/vim-jsbeautify"]
+  path = plugged/vim-jsbeautify
+  url = https://github.com/maksimr/vim-jsbeautify
+[submodule "plugged/vim-maven-plugin"]
+  path = plugged/vim-maven-plugin
+  url = https://github.com/mikelue/vim-maven-plugin
+  ignore = untracked
+[submodule "plugged/vim-pandoc-syntax"]
+  path = plugged/vim-pandoc-syntax
+  url = https://github.com/vim-pandoc/vim-pandoc-syntax
+
