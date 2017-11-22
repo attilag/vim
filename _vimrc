@@ -97,7 +97,7 @@ nmap <silent> <leader>sn :lnext<cr>
 
 " Look and Feel
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 " removes modelines (best practices, they're apparently a security exploit)
 set modelines=0
 if has('gui_running')
@@ -138,6 +138,12 @@ set showmatch
 set hlsearch
 
 "--- Filetype settings
+
+augroup Java
+  au!
+"  au FileType java setlocal omnifunc=javacomplete#Complete
+augroup END
+
 
 "--- Plugin settings ---
 "-- solarized
@@ -181,6 +187,7 @@ let g:syntastic_enable_ballons = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_error_symbol = 'E'
 let g:syntastic_warning_symbol = "W"
+let g:syntastic_cpp_compiler_options="-std=c++14"
 " let g:syntastic_xml_xmllint_exec = "c:\\dev\\opt\\xsltproc-1.1.26\\xmllint.exe"
 " let g:syntastic_xml_checkers = ['xmllint']
 
@@ -203,6 +210,11 @@ augroup syntastic_settings
   au!
   au FileType html let b:syntastic_mode = "passive"
 augroup END
+
+" --- clang-format
+let g:clang_format#command = "clang-format-4.0"
+let g:clang_format#style_options = { "Standard" : "Cpp11" }
+
 " -- rooter plugin
 let g:rooter_patterns = ['pom.xml', '.git/']
 "--- tagbar
