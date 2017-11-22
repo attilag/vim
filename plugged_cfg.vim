@@ -27,6 +27,7 @@ Plug 'burnettk/vim-angular' " AngularJS
 Plug 'maksimr/vim-jsbeautify' " reformat
 " Java
 Plug 'mikelue/vim-maven-plugin'
+" Plug 'artur-shaik/vim-javacomplete2'
 " C++
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'rhysd/vim-clang-format'
