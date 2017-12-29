@@ -1,82 +1,82 @@
-[submodule "plugged/ctrlp.vim"]
-	path = plugged/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "plugged/nerdcommenter"]
-	path = plugged/nerdcommenter
+	path = pack/plugins/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "plugged/nerdtree"]
-	path = plugged/nerdtree
+	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "plugged/syntastic"]
-	path = plugged/syntastic
+	path = pack/plugins/start/syntastic
 	url = https://github.com/scrooloose/syntastic
 [submodule "plugged/ultisnips"]
 	path = plugged/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 [submodule "plugged/vim-fugitive"]
-	path = plugged/vim-fugitive
+	path = pack/plugins/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "plugged/tagbar"]
-	path = plugged/tagbar
+	path = pack/plugins/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "plugged/vim-airline"]
-	path = plugged/vim-airline
+	path = pack/plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule "plugged/vim-colors-solarized"]
-	path = plugged/vim-colors-solarized
+	path = pack/plugins/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "plugged/vim-cpp-enhanced-highlight"]
-	path = plugged/vim-cpp-enhanced-highlight
+	path = pack/plugins/start/vim-cpp-enhanced-highlight
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
 [submodule "plugged/vim-gitgutter"]
-	path = plugged/vim-gitgutter
+	path = pack/plugins/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "plugged/vim-nerdtree-tabs"]
-	path = plugged/vim-nerdtree-tabs
+	path = pack/plugins/start/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
 [submodule "plugged/vim-rooter"]
-	path = plugged/vim-rooter
+	path = pack/plugins/start/vim-rooter
 	url = https://github.com/airblade/vim-rooter.git
 [submodule "plugged/vim-sensible"]
-	path = plugged/vim-sensible
+	path = pack/plugins/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
 [submodule "plugged/vim-easy-align"]
-	path = plugged/vim-easy-align
+	path = pack/plugins/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "plugged/vim-snippets"]
-	path = plugged/vim-snippets
+	path = pack/plugins/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
 [submodule "plugged/stlrefvim"]
-	path = plugged/stlrefvim
+	path = pack/plugins/start/stlrefvim
   url = https://github.com/vim-scripts/stlrefvim.git
   ignore = untracked
-[submodule "plugged/vimcolors"]
-	path = plugged/vimcolors
-	url = https://github.com/elmindreda/vimcolors
 [submodule "plugged/tern_for_vim"]
-	path = plugged/tern_for_vim
+	path = pack/plugins/start/tern_for_vim
   url = https://github.com/ternjs/tern_for_vim
 [submodule "plugged/vim-angular"]
-	path = plugged/vim-angular
+	path = pack/plugins/start/vim-angular
   url = https://github.com/burnettk/vim-angular
   ignore = untracked
 [submodule "plugged/vim-clang-format"]
-	path = plugged/vim-clang-format
+	path = pack/plugins/start/vim-clang-format
   url = https://github.com/rhysd/vim-clang-format
   ignore = untracked
 [submodule "plugged/vim-javascript"]
-  path = plugged/vim-javascript
+	path = pack/plugins/start/vim-javascript
   url = https://github.com/pangloss/vim-javascript
 [submodule "plugged/vim-jsbeautify"]
-  path = plugged/vim-jsbeautify
+	path = pack/plugins/start/vim-jsbeautify
   url = https://github.com/maksimr/vim-jsbeautify
 [submodule "plugged/vim-maven-plugin"]
-  path = plugged/vim-maven-plugin
+	path = pack/plugins/start/vim-maven-plugin
   url = https://github.com/mikelue/vim-maven-plugin
   ignore = untracked
 [submodule "plugged/vim-pandoc-syntax"]
-  path = plugged/vim-pandoc-syntax
+	path = pack/plugins/start/vim-pandoc-syntax
   url = https://github.com/vim-pandoc/vim-pandoc-syntax
 [submodule "plugged/vim-javacomplete2"]
-	path = plugged/vim-javacomplete2
+	path = pack/plugins/start/vim-javacomplete2
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
+[submodule "pack/plugins/start/ctrlp.vim"]
+	path = pack/plugins/start/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "pack/plugins/start/vimcolors"]
+	path = pack/plugins/start/vimcolors
+	url = https://github.com/elmindreda/vimcolors.git
