@@ -3,8 +3,6 @@ set nocompatible
 scriptencoding utf-8
 set regexpengine=1
 
-source $HOME/.vim/plugged_cfg.vim
-
 "--- Detect OS ---
 if !exists("g:os")
   if !empty($OS)
@@ -97,12 +95,12 @@ nmap <silent> <leader>sn :lnext<cr>
 
 " Look and Feel
 set background=dark
-" colorscheme solarized
+colorscheme phosphor
 " removes modelines (best practices, they're apparently a security exploit)
 set modelines=0
 if has('gui_running')
-  set guifont=Consolas:h11
-  set guifontwide="Courier New":h10 " Windows mixed chracter sets
+  set guifont=Fira\ Code\ 14
+"  set guifontwide="Courier New":h10 " Windows mixed chracter sets
   set go=-T " no taskbar
 else
   set term=xterm
@@ -110,7 +108,6 @@ else
   let &t_AB="\e[48;5;%dm"
   let &t_AF="\e[38;5;%dm"
   if g:os == "Windows"
-    colorscheme phosphor
     set term=xterm-256color
     set t_ut=
   endif
