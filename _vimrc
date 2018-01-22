@@ -139,6 +139,8 @@ set hlsearch
 augroup Java
   au!
 "  au FileType java setlocal omnifunc=javacomplete#Complete
+  au FileType java setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+
 augroup END
 
 
