@@ -99,8 +99,8 @@ colorscheme phosphor
 " removes modelines (best practices, they're apparently a security exploit)
 set modelines=0
 if has('gui_running')
-  set guifont=Fira\ Code\ 14
-"  set guifontwide="Courier New":h10 " Windows mixed chracter sets
+  set guifont=Inconsolata\ 18
+" set guifontwide="Courier New":h10 " Windows mixed chracter sets
   set go=-T " no taskbar
 else
   set term=xterm
