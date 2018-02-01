@@ -80,3 +80,6 @@
 [submodule "pack/plugins/start/vimcolors"]
 	path = pack/plugins/start/vimcolors
 	url = https://github.com/elmindreda/vimcolors.git
+[submodule "pack/plugins/start/vim-ledger"]
+	path = pack/plugins/start/vim-ledger
+	url = https://github.com/ledger/vim-ledger.git
