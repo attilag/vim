@@ -98,6 +98,7 @@ set background=dark
 colorscheme phosphor
 " removes modelines (best practices, they're apparently a security exploit)
 set modelines=0
+set noanti
 if has('gui_running')
   set guifont=Inconsolata\ 18
 " set guifontwide="Courier New":h10 " Windows mixed chracter sets
