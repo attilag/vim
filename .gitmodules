@@ -86,3 +86,6 @@
 [submodule "pack/plugins/start/goyo.vim"]
 	path = pack/plugins/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "pack/plugins/start/vim-json"]
+	path = pack/plugins/start/vim-json
+	url = https://github.com/elzr/vim-json
