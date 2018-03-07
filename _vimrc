@@ -137,6 +137,12 @@ set hlsearch
 
 "--- Filetype settings
 
+augroup XML
+  au!
+  au FileType xml setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+  au FileType xsd setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+augroup END
+
 augroup Java
   au!
 "  au FileType java setlocal omnifunc=javacomplete#Complete
